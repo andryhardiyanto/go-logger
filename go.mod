@@ -1,6 +1,6 @@
 module github.com/andryhardiyanto/go-logger
 
-go 1.24.3
+go 1.26.2
 
 require (
 	github.com/newrelic/go-agent/v3 v3.40.1
