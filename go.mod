@@ -1,6 +1,6 @@
 module github.com/andryhardiyanto/go-logger
 
-go 1.26.2
+go 1.26.6
 
 require (
 	github.com/golang/mock v1.6.0

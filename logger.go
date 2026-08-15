@@ -53,15 +53,16 @@ type logger struct {
 //   - error: An error if logger creation fails
 //
 // Example:
-//   logger, err := NewLogger(
-//       WithLevel(LevelInfo),
-//       WithEncoding(EncodingJSON),
-//       WithAppMode(AppModeProduction),
-//   )
-//   if err != nil {
-//       log.Fatal(err)
-//   }
-//   logger.Info(context.Background(), "Application started")
+//
+//	logger, err := NewLogger(
+//	    WithLevel(LevelInfo),
+//	    WithEncoding(EncodingJSON),
+//	    WithAppMode(AppModeProduction),
+//	)
+//	if err != nil {
+//	    log.Fatal(err)
+//	}
+//	logger.Info(context.Background(), "Application started")
 func NewLogger(opts ...Option) (Logger, error) {
 	cfg := &config{}
 
